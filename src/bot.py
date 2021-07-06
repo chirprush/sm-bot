@@ -10,3 +10,4 @@ class Bot(Client):
     async def on_message(self, message):
         if message.author == self.user:
             return
+        await message.channel.send("ping")
